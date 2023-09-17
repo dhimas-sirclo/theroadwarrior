@@ -1,51 +1,31 @@
-# ADR 00. Use of Google Cloud Platform
+# ADR 00. Adopting Microsoft Azure as the cloud infrastructure for our organization
 
 ## Status
 
 Proposed
 
-## Context
+## Background
 
-Google Cloud Platform (GCP) is a prominent cloud computing platform that offers various cloud services, including computing, storage, and networking solutions. This ADR aims to document the architectural decisions made for developing and implementing a GCP-based infrastructure for our organization.
+The organization is planning to migrate from traditional on-premises infrastructure to cloud infrastructure. In order to achieve this, the organization has evaluated multiple cloud service providers such as Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure, and IBM Cloud. Each provider has its own set of features, benefits, and pricing structure. After a detailed analysis, it was concluded that Microsoft Azure is the most suitable option for our organization.
 
 ## Decision
 
-Our organization has decided to use Google Cloud Platform as the cloud infrastructure for our application. The primary considerations for this decision are:
-
-- Cost-effectiveness
-
-- Scalability
-
-- Reliability
-
-- Flexibility
-
-## Selections
-
-The following services from GCP have been selected to meet our requirements:
-
-- Compute Engine for virtual machines and computing resources
-
-- Cloud Storage for object storage and file hosting
-
-- Cloud SQL for managed database service
-
-- Firebase for app development and hosting
+Adopt Microsoft Azure as the cloud infrastructure for our organization.
 
 ## Rationale
 
-- Cost-Effectiveness: Google Cloud Platform is highly cost-effective compared to other cloud platforms, making it an attractive option for organizations with budget constraints.
+The following are the reasons for adopting Microsoft Azure:
 
-- Scalability: GCP's easy-to-scale infrastructure enables handling any amount of traffic in real-time.
+1. Comprehensive Services: Azure provides a complete range of cloud services from infrastructure as a service (IaaS) to software as a service (SaaS) and platform as a service (PaaS). This enables us to leverage Azure services to solve the organization's requirements, such as storage, compute, networking, and analytics.
 
-- Reliability: GCP's managed services offer high reliability, with automated backups and disaster recovery capabilities that ensure high availability of resources and data.
+2. Scalability and Flexibility: With Azure, we can easily scale up or down resources based on our business requirements. Azure also offers flexibility in choosing the operating system, programming language, and frameworks.
 
-- Flexibility: The platform provides various tools and services across different domains such as AI, data analytics, and IoT, making it highly versatile.
+3. Security and Compliance: Azure offers a high level of security and compliance, as it is compliant with several industry standards such as ISO, SOC, HIPAA, and PCI DSS. Azure also provides advanced security features such as network security groups, firewalls, and DDoS protection.
 
-## Consequences
+4. Hybrid Cloud: Azure provides a seamless hybrid cloud experience, enabling organizations to connect their on-premises infrastructure with Azure. This makes it easy for us to migrate workloads to the cloud and provides us with the flexibility to choose where to store data.
 
-Migrating to Google Cloud Platform will require training our teams on GCP services, re-architecting the application to be compatible with the selected services, and updating the infrastructure code to support GCP services. However, it is expected that once the migration is completed, we will have a highly scalable, reliable, and cost-effective infrastructure for hosting our application. Also, we will need to manage the ongoing costs of provisioning resources on GCP.
+5. Cost-effective: Azure offers a pay-as-you-go pricing model, which means we only pay for the resources used. This helps us save costs when compared to traditional on-premises infrastructure.
 
 ## Conclusion
 
-Google Cloud Platform is an excellent choice for our cloud infrastructure due to its cost-effectiveness, scalability, reliability, and flexibility. By utilizing the selected services, we can provide a highly available and robust infrastructure for our application.
+Adopting Microsoft Azure as the cloud infrastructure for our organization aligns with our business requirements and offers several benefits such as scalability, flexibility, security, and cost-effectiveness. Therefore, it is recommended to adopt Azure as our cloud infrastructure.

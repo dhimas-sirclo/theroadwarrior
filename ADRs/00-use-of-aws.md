@@ -1,51 +1,37 @@
-# ADR 00. Use of Google Cloud Platform
+# ADR 00. Adopting Amazon Web Services for Cloud Infrastructure
 
 ## Status
 
 Proposed
 
-## Context
+## Decision
 
-Google Cloud Platform (GCP) is a prominent cloud computing platform that offers various cloud services, including computing, storage, and networking solutions. This ADR aims to document the architectural decisions made for developing and implementing a GCP-based infrastructure for our organization.
+After a thorough evaluation of various cloud infrastructure platforms, it has been decided that Amazon Web Services (AWS) will be adopted by our organization for our cloud infrastructure needs.
+
+## Background
+
+Our organization is growing rapidly and we need a reliable and scalable cloud infrastructure to meet the demands of our business. After considering a number of cloud infrastructure providers, it was concluded that AWS offers the most suitable range of services to meet our current and future requirements.
+
+## Considerations
+
+There are numerous cloud infrastructure providers in the market that have proven to be reliable and efficient. However, AWS not only offers a comprehensive set of services to cater to our needs, but it also has an extensive customer base and a track record of successful deployments. AWS also provides a broad range of support and training resources to ensure that our team can work effectively with the platform.
+
+Furthermore, AWS has an extensive global presence with data centers located in various regions around the world. This ensures that our data is secure and our applications and services will be highly available. AWS also has a robust security framework that is critical for our business.
+
+Lastly, AWS provides a pay-as-you-go model which offers us the flexibility to scale our infrastructure based on demand. This means that we will only be charged for what we use, which allows us to optimize our costs and invest in other areas of the business.
 
 ## Decision
 
-Our organization has decided to use Google Cloud Platform as the cloud infrastructure for our application. The primary considerations for this decision are:
-
-- Cost-effectiveness
-
-- Scalability
-
-- Reliability
-
-- Flexibility
-
-## Selections
-
-The following services from GCP have been selected to meet our requirements:
-
-- Compute Engine for virtual machines and computing resources
-
-- Cloud Storage for object storage and file hosting
-
-- Cloud SQL for managed database service
-
-- Firebase for app development and hosting
-
-## Rationale
-
-- Cost-Effectiveness: Google Cloud Platform is highly cost-effective compared to other cloud platforms, making it an attractive option for organizations with budget constraints.
-
-- Scalability: GCP's easy-to-scale infrastructure enables handling any amount of traffic in real-time.
-
-- Reliability: GCP's managed services offer high reliability, with automated backups and disaster recovery capabilities that ensure high availability of resources and data.
-
-- Flexibility: The platform provides various tools and services across different domains such as AI, data analytics, and IoT, making it highly versatile.
+Based on the evaluations performed and the advantages offered by AWS, it has been decided that AWS will be adopted for our cloud infrastructure needs.
 
 ## Consequences
 
-Migrating to Google Cloud Platform will require training our teams on GCP services, re-architecting the application to be compatible with the selected services, and updating the infrastructure code to support GCP services. However, it is expected that once the migration is completed, we will have a highly scalable, reliable, and cost-effective infrastructure for hosting our application. Also, we will need to manage the ongoing costs of provisioning resources on GCP.
+The adoption of AWS may require training for our teams to ensure that they are familiar with the platform and can effectively utilize it. There may also be some initial costs to move our current infrastructure to the AWS platform.
 
-## Conclusion
+## Ownership
 
-Google Cloud Platform is an excellent choice for our cloud infrastructure due to its cost-effectiveness, scalability, reliability, and flexibility. By utilizing the selected services, we can provide a highly available and robust infrastructure for our application.
+The responsibility for ensuring the effective utilization of AWS and the management of associated risks will fall within the remit of the cloud infrastructure team. Any issues that arise must be addressed by this team.
+
+## Review
+
+The decision to adopt AWS will be reviewed on an annual basis to ensure that it continues to meet our needs and that the benefits of the platform are being fully realized.

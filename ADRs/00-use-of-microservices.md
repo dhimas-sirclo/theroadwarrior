@@ -1,4 +1,4 @@
-# ADR 00. Use of Google Cloud Platform
+# ADR 00. Use of Microservices Architectural Style
 
 ## Status
 

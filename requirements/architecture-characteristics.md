@@ -1,30 +1,31 @@
 # Architecture Characteristics
 
-## Performance efficiency
+In this document, we listed a few requirements that we assumed would be important for the system.
 
-### Definition
+## Interoperability with Mail Service
 
-Measure of the performance relative to the amount of resources used under known conditions. This includes:
+- System must be able to integrate multiple mail service
 
-- time behavior: measure of response, processing times, and/or throughput rates
-- resource utilization: amounts and types of resources used, and
-- capacity: degree to which the maximum established limits are exceeded.
+## Interoperability with Agency System (eg airline, hotel, and car rental)
 
-## Compatibility
+- System must be able integrate seamlessly with existing travel systems
+- Must integrate with preferred travel agent for quick problem resolution
 
-### Defintion
+## Security
 
-Degree to which a product, system, or component can exchange information with other products, systems, or components and/or perform its required functions while sharing the same hardware or software environment. It includes:
+- User personal data must be protected via encryption in all communication channels.
 
-- Coexistence
-- Interoperability
+## Performance
 
-##
+- System must be able to support a high number of concurrent user sessions
+- System must be able to reflect the update within 5 minute Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)
+- Downtime max 5 minute / month
 
-##
+## Usability
 
-##
+- System must be able to support multi language
+- Notifications to user about any updates from agency (delays, cancellations, updates, gate changes, etc.) within 5 minutes
 
-##
+## Portability
 
-##
+- Native mobile app or web app.
