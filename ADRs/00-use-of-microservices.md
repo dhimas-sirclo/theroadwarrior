@@ -1,51 +1,34 @@
-# ADR 00. Use of Microservices Architectural Style
+# ADR 01: Use the microservice architecture style with containerization
 
 ## Status
 
-Proposed
+Proposed.
 
 ## Context
 
-Google Cloud Platform (GCP) is a prominent cloud computing platform that offers various cloud services, including computing, storage, and networking solutions. This ADR aims to document the architectural decisions made for developing and implementing a GCP-based infrastructure for our organization.
-
 ## Decision
 
-Our organization has decided to use Google Cloud Platform as the cloud infrastructure for our application. The primary considerations for this decision are:
+We have decided to adopt a microservices architectural style. This will give us the following benefits:
 
-- Cost-effectiveness
-
-- Scalability
-
-- Reliability
-
-- Flexibility
-
-## Selections
-
-The following services from GCP have been selected to meet our requirements:
-
-- Compute Engine for virtual machines and computing resources
-
-- Cloud Storage for object storage and file hosting
-
-- Cloud SQL for managed database service
-
-- Firebase for app development and hosting
+- Modularity: Microservices are small, independent services that can be developed, deployed, and maintained separately. This makes it easier to add new features and fix bugs without impacting the entire system.
+- Scalability: Microservices can be scaled independently to meet demand. This makes it easier to handle spikes in traffic and to scale up or down different parts of the system as needed.
+- Resilience: Microservices are more resilient to failures than monolithic applications. If one microservice fails, the other microservices can continue to operate.
 
 ## Rationale
 
-- Cost-Effectiveness: Google Cloud Platform is highly cost-effective compared to other cloud platforms, making it an attractive option for organizations with budget constraints.
+We believe that the benefits of a microservices architecture outweigh the costs. We are committed to investing in the necessary tools and processes to develop and maintain a microservices architecture.
+in using the microservice style.
 
-- Scalability: GCP's easy-to-scale infrastructure enables handling any amount of traffic in real-time.
+## Risks
 
-- Reliability: GCP's managed services offer high reliability, with automated backups and disaster recovery capabilities that ensure high availability of resources and data.
+There are a number of risks associated with adopting a microservices architecture, including:
 
-- Flexibility: The platform provides various tools and services across different domains such as AI, data analytics, and IoT, making it highly versatile.
+- Increased complexity: Microservices architectures can be more complex to develop and maintain than monolithic architectures.
+- Communication overhead: Microservices need to communicate with each other, which can add overhead to the system.
+- Testing overhead: Microservices need to be tested in isolation and in combination with other microservices, which can increase the testing overhead.
 
-## Consequences
-
-Migrating to Google Cloud Platform will require training our teams on GCP services, re-architecting the application to be compatible with the selected services, and updating the infrastructure code to support GCP services. However, it is expected that once the migration is completed, we will have a highly scalable, reliable, and cost-effective infrastructure for hosting our application. Also, we will need to manage the ongoing costs of provisioning resources on GCP.
+We are aware of these risks and we are committed to mitigating them. We will invest in the necessary tools and processes to develop and maintain a microservices architecture. We will also work with our team to ensure that they have the skills and knowledge necessary to develop and maintain microservices.
 
 ## Conclusion
 
-Google Cloud Platform is an excellent choice for our cloud infrastructure due to its cost-effectiveness, scalability, reliability, and flexibility. By utilizing the selected services, we can provide a highly available and robust infrastructure for our application.
+We have decided to adopt a microservices architectural style. We believe that the benefits of a microservices architecture outweigh the costs. We are committed to investing in the necessary tools and processes to develop and maintain a microservices architecture.
