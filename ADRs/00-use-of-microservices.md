@@ -5,7 +5,7 @@
 Proposed.
 
 ## Context
-
+Road Warrior is a new start-up company that wants to build the next generation online trip management. We assume it does not have a sizeable team, low cost maintenance and should be easy to adopt new technology. The architecture style should be simple
 ## Decision
 
 We have decided to adopt a microservices architectural style. This will give us the following benefits:
