@@ -13,6 +13,7 @@ We have decided to adopt a microservices architectural style. This will give us 
 - Modularity: Microservices are small, independent services that can be developed, deployed, and maintained separately. This makes it easier to add new features and fix bugs without impacting the entire system.
 - Scalability: Microservices can be scaled independently to meet demand. This makes it easier to handle spikes in traffic and to scale up or down different parts of the system as needed.
 - Resilience: Microservices are more resilient to failures than monolithic applications. If one microservice fails, the other microservices can continue to operate.
+- Extensibility: Microservices are designed to be small and independent, which makes it easy to add new services or modify existing services without impacting the rest of the system. So, Microservices architecture can be extended easily to add new features or functionality.
 
 ## Rationale
 
